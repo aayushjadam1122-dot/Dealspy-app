@@ -1,7 +1,7 @@
 {
   "cli": {
     "version": ">= 10.0.0",
-    "packageManager": "pnpm"
+    "appExtensions": {}
   },
   "build": {
     "development": {
@@ -9,11 +9,11 @@
       "distribution": "internal"
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "packageManager": "pnpm"
     },
-    "production": {}
-  },
-  "submit": {
-    "production": {}
+    "production": {
+      "packageManager": "pnpm"
+    }
   }
 }
